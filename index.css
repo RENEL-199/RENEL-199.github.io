@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: "Press Start 2P", monospace;
+ 
+  padding: 0;
+
+}
+
+/* BACKGROUND */
+.world {
+
+  background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url("Uploads/index-bg.png") no-repeat center center;
+  background-size: cover;
+}
+
+/* TITLE */
+h1 {
+  font-size: 28px;
+  color: white;
+  text-shadow: 3px 3px black;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* TEXT */
+h6 {
+  line-height: 1.8;
+  font-size: 12px;
+  text-shadow: 2px 2px black;
+}
+
+/* NAVBAR */
+.nav-link {
+  text-shadow: 2px 2px black;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #ffd700 !important;
+}
+
+/* MENU BUTTONS */
+.menu-btn {
+  display: block;
+  margin: auto;
+  border: none;
+  background: transparent;
+  transition: transform 0.2s ease;
+}
+
+/* BUTTON IMAGES */
+.menu-btn img {
+  width: 100%;
+ 
+  height: auto;
+  filter: drop-shadow(4px 4px 0px black);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+/* HOVER EFFECT */
+.menu-btn:hover img {
+  transform: scale(1.08);
+  filter: drop-shadow(0px 0px 12px white);
+}
+
+/* CLICK EFFECT */
+.menu-btn:active img {
+  transform: scale(0.95);
+}
+
+
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

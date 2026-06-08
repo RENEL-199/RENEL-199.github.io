@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pixel Portfolio</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Pixel Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<div class="world">
+
+  <!-- NAVBAR -->
+  <ul class="nav flex-column flex-sm-row justify-content-end p-3 m-0">
+    <li class="nav-item">
+      <a class="nav-link text-white" href="#">Welcome Page</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="gallery.html">Gallery</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="#">About me</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="#">Contact me</a>
+    </li>
+  </ul>
+
+  <!-- MAIN CONTENT -->
+  <div class="container main px-3 px-lg-0">
+
+    <div class="row align-items-center min-vh-100 text-center text-lg-start">
+
+      <!-- LEFT SIDE -->
+      <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+        <h1 class="text-white mb-4">
+          Welcome to my art portfolio
+        </h1>
+
+        <h6 class="text-white">
+          Enter my creative world, where ideas become visuals and imagination turns into pixel art.
+          This space showcases my personal projects, experiments, and inspirations as I continue learning
+          and growing in game and digital art.
+        </h6>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="col-12 col-lg-6 text-center mt-4 mt-lg-0">
+<button class="btn menu-btn mb-3" id="aboutBtn">
+  <img src="Uploads/about me1.gif" alt="About Me">
+</button>
+
+<button class="btn menu-btn mb-3" id="galleryBtn">
+  <img src="Uploads/Gallery.png" alt="Gallery">
+</button>
+
+<button class="btn menu-btn mb-3" id="contactBtn">
+  <img src="Uploads/Contact.png" alt="Contact">
+</button>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.getElementById("aboutBtn").addEventListener("click", function () {
+  window.location.href = "about.html";
+});
+
+document.getElementById("galleryBtn").addEventListener("click", function () {
+  window.location.href = "gallery.html";
+});
+
+document.getElementById("contactBtn").addEventListener("click", function () {
+  window.location.href = "contact.html";
+});
+</script>
+</body>
+</html>

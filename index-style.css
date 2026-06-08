@@ -1,0 +1,185 @@
+/* =========================
+   BASE PAGE
+========================= */
+body {
+  margin: 0;
+  overflow-x: auto;   /* IMPORTANT: keeps horizontal scroll */
+  overflow-y: hidden;
+  background: #0e0f14;
+   font-family: 'Press Start 2P', cursive;
+}
+
+.navbar-custom {
+  background: #111;
+  border-bottom: 2px solid #333;
+}
+
+.dropdown-menu {
+  background: #1a1a1a;
+  border: 1px solid #333;
+}
+
+.dropdown-item {
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+}
+
+.dropdown-item:hover {
+  background: #333;
+  color: #fff;
+}
+/* NAVBAR */
+.nav-link {
+  text-shadow: 2px 2px black;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #ffd700 !important;
+}
+
+
+/* =========================
+   SCROLL CONTAINER
+========================= */
+.world-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+    scroll-behavior: smooth; 
+}
+
+/* =========================
+   WORLD (HORIZONTAL MAP)
+========================= */
+
+.world > * {
+  flex: 0 0 auto; /* prevents resizing/shifting */
+}
+.world {
+  width: 2600px;
+  height: 100vh;
+
+  background: url("Uploads/bg1.png") no-repeat;
+  background-size: auto 100%;
+  background-position: left center;
+
+  position: relative;
+}
+
+/* =========================
+   INTERACTIVE ITEMS
+========================= */
+.world-item {
+  transition: transform 0.2s ease, filter 0.2s ease;
+  filter: drop-shadow(0 10px 10px rgba(0,0,0,0.4));
+}
+
+.world-item:hover {
+  transform: translateY(-6px) scale(1.03);
+  filter: drop-shadow(0 18px 18px rgba(0,0,0,0.6));
+}
+
+/* =========================
+   IMAGES
+========================= */
+.banner-img {
+  max-width: 300px;
+  height: auto;
+  image-rendering: pixelated;
+}
+
+/* =========================
+   FLOOR PANEL UI
+========================= */
+.floor-panel {
+  background: rgba(10, 10, 15, 0.6);
+  padding: 16px;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.btn-floor {
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.2s ease;
+}
+
+/* Hover effect */
+.btn-floor:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateX(4px);
+}
+
+/* Bootstrap-style ACTIVE state */
+.btn-floor.active {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: white;
+  font-weight: bold;
+  transform: scale(1.08);
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+.modal-content {
+  backdrop-filter: blur(10px);
+}
+
+#modalImage {
+  transition: transform 0.2s ease;
+}
+
+#modalImage:hover {
+  transform: scale(1.02);
+}
+
+.floor-transition {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(#000, #111);
+  z-index: 9999;
+  transform: translateY(100%);
+  transition: transform 0.9s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.floor-transition.active {
+  transform: translateY(0%);
+}
+
+/* optional “lift away” exit animation */
+.floor-transition.exit {
+  transform: translateY(-100%);
+}
+
+#floorModal .modal-content {
+    background: transparent;
+  border: none;
+  box-shadow: none;
+
+}
+
+
+
+#floorModal .border {
+  background: #111;
+}
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 576px) {
+
+  .world {
+    background-size: cover;
+    background-position: center;
+    padding: 0px;
+  }
+
+  .banner-img {
+   
+    width: 80%;
+      height: auto;
+      image-rendering: pixelated;
+  }
+}
