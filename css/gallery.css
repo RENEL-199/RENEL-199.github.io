@@ -168,7 +168,7 @@ body {
 /* =========================
    MOBILE
 ========================= */
-@media (max-width: 576px) {
+@media (max-width: 480px) {
 
   .world {
     background-size: cover;
