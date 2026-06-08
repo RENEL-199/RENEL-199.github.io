@@ -3,7 +3,7 @@
 ========================= */
 body {
   margin: 0;
-  overflow-x: auto;   /* IMPORTANT: keeps horizontal scroll */
+   /* IMPORTANT: keeps horizontal scroll */
   overflow-y: hidden;
   background: #0e0f14;
    font-family: 'Press Start 2P', cursive;
