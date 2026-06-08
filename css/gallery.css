@@ -58,7 +58,7 @@ body {
   flex: 0 0 auto; /* prevents resizing/shifting */
 }
 .world {
-  width: 2600px;
+  width: 2350px;
   height: 100vh;
   
 
