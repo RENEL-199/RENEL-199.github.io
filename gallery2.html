@@ -16,86 +16,89 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-sm navbar-dark navbar-custom sticky-top px-3">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark bg-opacity-50 px-3">
+  <div class="container-fluid">
 
-        <div class="container-fluid">
+    <a class="navbar-brand pixel-title" href="#">PIXEL MUSEUM</a>
 
-            <!-- LEFT SIDE: FLOOR DROPDOWN -->
-            <div class="dropdown">
-                <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                    Floors
-                </button>
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="gallery.html">1st Floor</a></li>
-                    <li><a class="dropdown-item" href="gallery2.html">2nd Floor</a></li>
-                    <li><a class="dropdown-item" href="gallery3.html">3rd Floor</a></li>
-                </ul>
-            </div>
+    <div class="collapse navbar-collapse" id="navbarContent">
 
-            <!-- RIGHT SIDE: NAV LINKS -->
-            <ul class="navbar-nav ms-auto flex-row gap-3">
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="index.html">Welcome Page</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="gallery.html">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">About me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Contact me</a>
-                </li>
-            </ul>
+      <!-- LEFT -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Floors
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="gallery.html">1st Floor</a></li>
+            <li><a class="dropdown-item" href="gallery2.html">2nd Floor</a></li>
+            <li><a class="dropdown-item" href="gallery3.html">3rd Floor</a></li>
+          </ul>
+        </li>
+      </ul>
 
-        </div>
-    </nav>
+      <!-- RIGHT -->
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Welcome</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
 
     <!-- WORLD -->
     <div class="world-wrapper">
-        <div class="world d-flex align-items-center gap-5">
+    <div class="world d-flex align-items-center flex-nowrap">
 
-            <button class="btn p-0 border-0" data-bs-toggle="modal" data-bs-target="#floorModal">
+            <button class="btn mx-2 mx-md-2 p-0 border-0" data-bs-toggle="modal" data-bs-target="#floorModal">
                 <img src="Uploads/Banne2r.png" class="img-fluid banner-img" alt="Banner">
             </button>
 
-            <button class="btn world-item p-5 border-0" data-bs-toggle="modal" data-bs-target="#imageModal"
+            <button class="btn world-item mx-3 mx-md-4 p-2 border-0" data-bs-toggle="modal" data-bs-target="#imageModal"
                 data-img="Uploads/port6.png" data-title="Drowing in the Void" data-artist="Sam Renly Cruzado"
                 data-year="2025" data-style="Pixel Art">
 
                 <img src="Uploads/port6.png" class="img-fluid banner-img" alt="">
             </button>
 
-            <button class="btn world-item p-3 border-0" data-bs-toggle="modal" data-bs-target="#imageModal"
+            <button class="btn world-item mx-4 mx-md-4 p-2 border-0" data-bs-toggle="modal" data-bs-target="#imageModal"
                 data-img="Uploads/port7.png" data-title="Did I miss something?" data-artist="Sam Renly Cruzado"
                 data-year="2025" data-style="Pixel Art">
 
                 <img src="Uploads/port7.png" class="img-fluid banner-img" alt="">
             </button>
 
-            <button class="btn world-item p-4 border-0" data-bs-toggle="modal" data-bs-target="#imageModal"
+            <button class="btn world-item mx-4 mx-md-3 p-2 border-0" data-bs-toggle="modal" data-bs-target="#imageModal"
                 data-img="Uploads/port8.png" data-title="HabangBuhay Pansamantala" data-description=""
                 data-artist="Sam Renly Cruzado" data-year="2025" data-style="Pixel Art">
 
                 <img src="Uploads/port8.png" class="img-fluid banner-img" alt="">
             </button>
 
-            <button class="btn world-item p-3 border-0" data-bs-toggle="modal" data-bs-target="#imageModal"
+            <button class="btn world-item mx-3 mx-md-3 p-2 border-0" data-bs-toggle="modal" data-bs-target="#imageModal"
                 data-img="Uploads/port9.png" data-title="Legend Of Hei" data-description=""
                 data-artist="Sam Renly Cruzado" data-year="2025" data-style="Pixel Art">
 
                 <img src="Uploads/port9.png" class="img-fluid banner-img" alt="">
             </button>
 
-            <button class="btn world-item p-4 border-0" data-bs-toggle="modal" data-bs-target="#imageModal"
+            <button class="btn world-item mx-3 mx-md-3 p-2 border-0" data-bs-toggle="modal" data-bs-target="#imageModal"
                 data-img="Uploads/port10.png" data-title="Mountain Fear" data-description=""
                 data-artist="Sam Renly Cruzado" data-year="2025" data-style="Pixel Art">
 
                 <img src="Uploads/port10.png" class="img-fluid banner-img" alt="">
             </button>
 
-            <div class="floor-panel btn-group-vertical gap-3 ms-4">
+      <div class="floor-panel btn-group-vertical m-5">
 
                 <button class="btn btn-floor" type="button" id="floor1Btn">
                     1st Floor
