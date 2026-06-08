@@ -12,7 +12,6 @@
   <!-- Pixel Font -->
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
   <link rel="stylesheet" href="index.css">
 </head>
 
@@ -21,28 +20,34 @@
 <div class="world">
 
   <!-- NAVBAR -->
-  <ul class="nav flex-column flex-sm-row justify-content-end p-3 m-0">
-    <li class="nav-item">
-      <a class="nav-link text-white" href="#">Welcome Page</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link text-white" href="gallery.html">Gallery</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link text-white" href="#">About me</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link text-white" href="#">Contact me</a>
-    </li>
-  </ul>
+  <nav class="navbar navbar-expand-lg  navbar-dark  bg-opacity-50 px-3">
+    <div class="container-fluid">
+
+      <a class="navbar-brand text-white" href="#">Renly</a>
+
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav text-center text-lg-end gap-1 gap-lg-2">
+          <li class="nav-item"><a class="nav-link text-white" href="#">Welcome Page</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">About me</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Contact me</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
 
   <!-- MAIN CONTENT -->
-  <div class="container main px-3 px-lg-0">
+  <div class="container px-3 px-lg-0 pt-5 mt-0">
 
-    <div class="row align-items-center min-vh-100 text-center text-lg-start">
+    <div class="row align-items-center min-vh-100 text-center text-lg-start g-4">
 
       <!-- LEFT SIDE -->
-      <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+      <div class="col-12 col-lg-6">
         <h1 class="text-white mb-4">
           Welcome to my art portfolio
         </h1>
@@ -55,18 +60,23 @@
       </div>
 
       <!-- RIGHT SIDE -->
-      <div class="col-12 col-lg-6 text-center mt-4 mt-lg-0">
-<button class="btn menu-btn mb-3" id="aboutBtn">
-  <img src="Uploads/about me1.gif" alt="About Me">
-</button>
+      <div class="col-12 col-lg-6 text-center">
 
-<button class="btn menu-btn mb-3" id="galleryBtn">
-  <img src="Uploads/Gallery.png" alt="Gallery">
-</button>
+        <div class="d-flex flex-column align-items-center gap-3">
 
-<button class="btn menu-btn mb-3" id="contactBtn">
-  <img src="Uploads/Contact.png" alt="Contact">
-</button>
+          <button class="btn menu-btn w-75 w-md-50" id="aboutBtn">
+            <img src="Uploads/about me1.gif" class="img-fluid" alt="About Me">
+          </button>
+
+          <button class="btn menu-btn w-75 w-md-50" id="galleryBtn">
+            <img src="Uploads/Gallery.png" class="img-fluid" alt="Gallery">
+          </button>
+
+          <button class="btn menu-btn w-75 w-md-50" id="contactBtn">
+            <img src="Uploads/Contact.png" class="img-fluid" alt="Contact">
+          </button>
+
+        </div>
 
       </div>
 
@@ -76,18 +86,20 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 <script>
-document.getElementById("aboutBtn").addEventListener("click", function () {
+document.getElementById("aboutBtn").addEventListener("click", () => {
   window.location.href = "about.html";
 });
 
-document.getElementById("galleryBtn").addEventListener("click", function () {
+document.getElementById("galleryBtn").addEventListener("click", () => {
   window.location.href = "gallery.html";
 });
 
-document.getElementById("contactBtn").addEventListener("click", function () {
+document.getElementById("contactBtn").addEventListener("click", () => {
   window.location.href = "contact.html";
 });
 </script>
+
 </body>
 </html>
