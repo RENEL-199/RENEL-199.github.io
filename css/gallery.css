@@ -60,9 +60,9 @@ body {
 .world {
   width: 2600px;
   height: 100vh;
-   height: 100dvh;
+  
 
-  background: url("../Uploads/bg-trial.png") ;
+  background: url("../Uploads/bg1.png") ;
   background-size: auto 100%;
   background-position: left center;
 
