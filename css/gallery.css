@@ -168,15 +168,13 @@ body {
 /* =========================
    MOBILE
 ========================= */
-@media (max-width: 480px) {
+@media (max-width: 576px) {
 
   .world {
     background-size: cover;
-    background-position: left;
+    background-position: center;
     padding: 0px;
   }
-
-  
 
   .banner-img {
    
