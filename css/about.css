@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family: "Press Start 2P", monospace;
+  padding: 0;
+
+  background: #e7c464;
+
+}
+
+
+.bg {
+
+  background:
+    linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20)),
+    url("../Uploads/about header.png") no-repeat center center;
+  background-size: cover;
+  height: 30vh;
+
+}
