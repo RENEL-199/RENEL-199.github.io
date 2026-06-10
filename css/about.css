@@ -3,17 +3,42 @@ body {
   font-family: "Press Start 2P", monospace;
   padding: 0;
 
-  background: #e7c464;
+  background: #0f111e;
 
 }
 
+.custom-nav {
+border: solid 3px #ffb84d;
+}
 
-.bg {
 
-  background:
-    linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20)),
-    url("../Uploads/about header.png") no-repeat center center;
-  background-size: cover;
-  height: 30vh;
+.pixel-title {
+  font-size: 2rem;
+}
 
+.pixel-title span {
+  color: #ffb84d;
+}
+
+.character-img {
+  max-width: 700px;   /* desktop size */
+  width: 500px;
+  height: auto;
+}
+
+.aboutme{
+  background: url("../Uploads/bg.png");
+}
+
+@media (max-width: 768px) {
+  .character-img {
+    max-width: 400px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .character-img {
+    max-width: 250px;
+  }
 }
