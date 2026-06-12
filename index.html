@@ -8,7 +8,8 @@
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <!-- Pixel Font -->
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
@@ -17,89 +18,74 @@
 
 <body>
 
-  <div class="world">
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark site-nav px-3">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="Uploads/Charactersmol.gif" class="brand-sprite" alt="">
+        <span><span class="accent">SAM</span> RENLY CRUZADO</span>
+      </a>
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg  navbar-dark  bg-opacity-50 px-3">
-      <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <a class="navbar-brand text-white" href="#">Renly</a>
-
-        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav text-center text-lg-end gap-1 gap-lg-2">
-            <li class="nav-item"><a class="nav-link text-white" href="index.html">Welcome Page</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Gallery</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="about.html">About me</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact me</a></li>
-          </ul>
-        </div>
-
-      </div>
-    </nav>
-
-    <!-- MAIN CONTENT -->
-    <div class="container px-3 px-lg-0 pt-5 mt-0">
-
-      <div class="row align-items-center min-vh-100 text-center text-lg-start g-4">
-
-        <!-- LEFT SIDE -->
-        <div class="col-12 col-lg-6">
-          <h1 class="text-white mb-4">
-            Welcome to my art portfolio
-          </h1>
-
-          <h6 class="text-white">
-            Enter my creative world, where ideas become visuals and imagination turns into pixel art.
-            This space showcases my personal projects, experiments, and inspirations as I continue learning
-            and growing in game and digital art.
-          </h6>
-        </div>
-
-        <!-- RIGHT SIDE -->
-        <div class="col-12 col-lg-6 text-center">
-
-          <div class="d-flex flex-column align-items-center gap-3">
-
-            <button class="btn menu-btn w-75 w-md-50" id="aboutBtn">
-              <img src="Uploads/about me1.gif" class="img-fluid" alt="About Me">
-            </button>
-
-            <button class="btn menu-btn w-75 w-md-50" id="galleryBtn">
-              <img src="Uploads/Gallery.png" class="img-fluid" alt="Gallery">
-            </button>
-
-            <button class="btn menu-btn w-75 w-md-50" id="contactBtn">
-              <img src="Uploads/Contact.png" class="img-fluid" alt="Contact">
-            </button>
-
-          </div>
-
-        </div>
-
+      <div class="collapse navbar-collapse justify-content-end" id="nav">
+        <ul class="navbar-nav align-items-lg-center gap-2 text-center">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">WELCOME</a></li>
+          <li class="nav-sep d-none d-lg-block">◆</li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+          <li class="nav-sep d-none d-lg-block">◆</li>
+          <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+          <li class="nav-sep d-none d-lg-block">◆</li>
+          <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+        </ul>
       </div>
     </div>
+  </nav>
 
-  </div>
+  <!-- ===================== HERO ===================== -->
+  <section class="section hero">
+    <div class="row align-items-center min-vh-100 g-4 text-center text-lg-start">
+
+      <!-- LEFT SIDE -->
+      <div class="col-12 col-lg-6">
+        <h1>
+          <span class="welcome-label">Welcome to my</span>
+          <span class="title-accent">Art Portfolio</span>
+        </h1>
+        <p class="small-text mb-4" style="max-width:520px;">
+          Enter my creative world, where ideas become visuals and imagination turns into pixel art.
+          This space showcases my personal projects, experiments, and inspirations as I continue learning
+          and growing in game and digital art.
+        </p>
+        <a href="gallery.html" class="pixel-btn">EXPLORE GALLERY <i class="bi bi-caret-right-fill"></i></a>
+      </div>
+
+      <!-- RIGHT SIDE — menu buttons -->
+      <div class="col-12 col-lg-6">
+        <div class="d-flex flex-column align-items-center gap-3">
+
+          <a href="about.html" class="menu-btn w-75">
+            <img src="Uploads/about me1.gif" class="img-fluid" alt="About Me">
+          </a>
+
+          <a href="gallery.html" class="menu-btn w-75">
+            <img src="Uploads/Gallery.png" class="img-fluid" alt="Gallery">
+          </a>
+
+          <a href="contact.html" class="menu-btn w-75">
+            <img src="Uploads/Contact.png" class="img-fluid" alt="Contact">
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-  <script>
-    document.getElementById("aboutBtn").addEventListener("click", () => {
-      window.location.href = "about.html";
-    });
-
-    document.getElementById("galleryBtn").addEventListener("click", () => {
-      window.location.href = "gallery.html";
-    });
-
-    document.getElementById("contactBtn").addEventListener("click", () => {
-      window.location.href = "contact.html";
-    });
-  </script>
 
 </body>
 
