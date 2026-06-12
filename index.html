@@ -20,18 +20,19 @@
   <div class="world">
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg  navbar-dark  bg-opacity-50 px-3">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top site-nav px-3">
       <div class="container-fluid">
 
-        <a class="navbar-brand text-white" href="#">Renly</a>
+        <a class="navbar-brand text-white" href="index.html">Renly</a>
 
-        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav text-center text-lg-end gap-1 gap-lg-2">
-            <li class="nav-item"><a class="nav-link text-white" href="index.html">Welcome Page</a></li>
+            <li class="nav-item"><a class="nav-link text-white active" aria-current="page" href="index.html">Welcome Page</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Gallery</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="about.html">About me</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact me</a></li>
@@ -42,9 +43,9 @@
     </nav>
 
     <!-- MAIN CONTENT -->
-    <div class="container px-3 px-lg-0 pt-5 mt-0">
+    <div class="container px-3 px-lg-3 pb-5">
 
-      <div class="row align-items-center min-vh-100 text-center text-lg-start g-4">
+      <div class="row align-items-center justify-content-center hero-row text-center text-lg-start g-4 g-lg-5">
 
         <!-- LEFT SIDE -->
         <div class="col-12 col-lg-6">
@@ -64,15 +65,15 @@
 
           <div class="d-flex flex-column align-items-center gap-3">
 
-            <button class="btn menu-btn w-75 w-md-50" id="aboutBtn">
+            <button class="btn menu-btn" id="aboutBtn">
               <img src="Uploads/about me1.gif" class="img-fluid" alt="About Me">
             </button>
 
-            <button class="btn menu-btn w-75 w-md-50" id="galleryBtn">
+            <button class="btn menu-btn" id="galleryBtn">
               <img src="Uploads/Gallery.png" class="img-fluid" alt="Gallery">
             </button>
 
-            <button class="btn menu-btn w-75 w-md-50" id="contactBtn">
+            <button class="btn menu-btn" id="contactBtn">
               <img src="Uploads/Contact.png" class="img-fluid" alt="Contact">
             </button>
 

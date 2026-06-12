@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Press Start 2P", monospace;
+  color: #fff;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 184, 77, 0.12), transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(120, 90, 255, 0.12), transparent 40%),
+    #0f111e;
+}
+
+/* NAVBAR */
+.custom-nav {
+  border: solid 3px #ffb84d;
+  border-radius: 14px;
+  margin: 12px;
+  background: rgba(15, 17, 30, 0.85);
+  backdrop-filter: blur(8px);
+}
+
+.brand-sprite {
+  width: 34px;
+  height: 34px;
+  image-rendering: pixelated;
+}
+
+.navbar-brand span {
+  text-shadow: 2px 2px black;
+}
+
+.nav-link {
+  font-size: 11px;
+  text-shadow: 2px 2px black;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffd700 !important;
+}
+
+/* HEADINGS */
+.pixel-title {
+  font-size: clamp(1.4rem, 4vw, 2.6rem);
+  text-shadow: 3px 3px black;
+  line-height: 1.4;
+}
+
+.pixel-title span {
+  color: #ffb84d;
+}
+
+.subtitle {
+  max-width: 640px;
+  font-size: 11px;
+  line-height: 1.9;
+  color: #c9cde0;
+  text-shadow: 1px 1px black;
+}
+
+/* CARDS */
+.contact-card {
+  background: rgba(20, 23, 40, 0.7);
+  border: 3px solid #ffb84d;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+}
+
+.card-heading {
+  font-size: 1.1rem;
+  color: #ffb84d;
+  text-shadow: 2px 2px black;
+}
+
+/* CONTACT ROWS */
+.contact-row {
+  color: #e6e8f5;
+  padding: 12px 14px;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+a.contact-row:hover {
+  transform: translateX(4px);
+  border-color: #ffd700;
+  background: rgba(255, 184, 77, 0.1);
+  color: #fff;
+}
+
+.contact-icon {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  font-size: 11px;
+  color: #0f111e;
+  background: #ffb84d;
+  border-radius: 10px;
+  text-shadow: none;
+}
+
+.contact-text {
+  font-size: 10px;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+.mascot {
+  width: 140px;
+  image-rendering: pixelated;
+  filter: drop-shadow(4px 4px 0 black);
+}
+
+/* FORM */
+.form-label {
+  font-size: 10px;
+  color: #c9cde0;
+  text-shadow: 1px 1px black;
+}
+
+.pixel-input {
+  background: rgba(10, 12, 22, 0.85);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-family: "Press Start 2P", monospace;
+  font-size: 10px;
+  line-height: 1.8;
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+.pixel-input::placeholder {
+  color: #7a7f99;
+  font-size: 9px;
+}
+
+.pixel-input:focus {
+  background: rgba(10, 12, 22, 0.95);
+  border-color: #ffb84d;
+  box-shadow: 0 0 0 0.2rem rgba(255, 184, 77, 0.25);
+  color: #fff;
+}
+
+.pixel-btn {
+  font-family: "Press Start 2P", monospace;
+  font-size: 11px;
+  color: #0f111e;
+  background: #ffb84d;
+  border: 3px solid #0f111e;
+  border-radius: 12px;
+  padding: 14px 22px;
+  box-shadow: 4px 4px 0 #00000080;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.2s ease;
+}
+
+.pixel-btn:hover {
+  background: #ffd700;
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 #00000080;
+}
+
+.pixel-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 #00000080;
+}
+
+/* RESPONSIVE */
+@media (max-width: 575.98px) {
+  .nav-link {
+    font-size: 12px;
+  }
+
+  .contact-text {
+    font-size: 9px;
+  }
+
+  .mascot {
+    width: 110px;
+  }
+}

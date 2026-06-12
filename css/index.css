@@ -1,51 +1,71 @@
 body {
   margin: 0;
-  font-family: "Press Start 2P", monospace;
- 
   padding: 0;
-
+  font-family: "Press Start 2P", monospace;
 }
 
 /* BACKGROUND */
-
 .world {
-
+  min-height: 100vh;
   background:
-    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-    url("../Uploads/index-bg.png") no-repeat center center;
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("../Uploads/index-bg.png") no-repeat center center fixed;
   background-size: cover;
 }
 
-/* TITLE */
-h1 {
-  font-size: 28px;
-  color: white;
-  text-shadow: 3px 3px black;
-  animation: fadeIn 1.5s ease-in-out;
-}
-
-/* TEXT */
-h6 {
-  line-height: 1.8;
-  font-size: 12px;
-  text-shadow: 2px 2px black;
-}
-
 /* NAVBAR */
+.site-nav {
+  background: rgba(15, 17, 30, 0.7);
+  backdrop-filter: blur(8px);
+  border-bottom: 3px solid #ffb84d;
+}
 
+.navbar-brand {
+  text-shadow: 2px 2px black;
+  letter-spacing: 1px;
+}
 
 .nav-link {
+  font-size: 11px;
   text-shadow: 2px 2px black;
   transition: color 0.2s ease;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link.active {
   color: #ffd700 !important;
+}
+
+/* HERO LAYOUT */
+.hero-row {
+  min-height: calc(100vh - 80px);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* TITLE */
+h1 {
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  line-height: 1.6;
+  color: white;
+  text-shadow: 3px 3px black;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* TEXT */
+h6 {
+  line-height: 2;
+  font-size: clamp(10px, 1.4vw, 13px);
+  color: #e6e8f5;
+  text-shadow: 2px 2px black;
+  animation: fadeIn 1.6s ease-in-out;
 }
 
 /* MENU BUTTONS */
 .menu-btn {
   display: block;
+  width: 100%;
+  max-width: 320px;
   margin: auto;
   border: none;
   background: transparent;
@@ -55,8 +75,8 @@ h6 {
 /* BUTTON IMAGES */
 .menu-btn img {
   width: 100%;
- 
   height: auto;
+  image-rendering: pixelated;
   filter: drop-shadow(4px 4px 0px black);
   transition: transform 0.2s ease, filter 0.2s ease;
 }
@@ -72,8 +92,6 @@ h6 {
   transform: scale(0.95);
 }
 
-
-
 /* ANIMATION */
 @keyframes fadeIn {
   from {
@@ -83,5 +101,27 @@ h6 {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 991.98px) {
+  .menu-btn {
+    max-width: 280px;
+  }
+
+  .hero-row {
+    min-height: auto;
+    padding-top: 2.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .nav-link {
+    font-size: 12px;
+  }
+
+  .menu-btn {
+    max-width: 240px;
   }
 }
