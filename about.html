@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About me &middot; Pixel Portfolio</title>
+  <title>Pixel Portfolio</title>
+
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -18,15 +19,12 @@
 
 
 
-  <nav class="navbar navbar-expand-lg navbar-dark sticky-top custom-nav px-3 m-3">
+  <nav class="navbar navbar-expand-lg navbar-dark position-sticky  custom-nav p-0 m-3">
     <div class="container-fluid">
-      <a class="navbar-brand d-flex align-items-center gap-2 text-white" href="index.html">
-        <img src="Uploads/Charactersmol.gif" class="brand-sprite" alt="">
-        <span>Renly</span>
-      </a>
+      <img src="Uploads/Charactersmol.gif" class="img-fluid pe-3" alt="">
+      <a class="navbar-brand text-white" href="#">Renly</a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -34,7 +32,7 @@
         <ul class="navbar-nav text-center text-lg-end gap-1 gap-lg-2">
           <li class="nav-item"><a class="nav-link text-white" href="index.html">Welcome Page</a></li>
           <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link text-white active" aria-current="page" href="about.html">About me</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="about.html">About me</a></li>
           <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact me</a></li>
         </ul>
       </div>
@@ -46,12 +44,12 @@
 
 
 
-  <div class="hero-intro d-flex flex-column flex-lg-row align-items-center p-4 p-md-5">
-    <div class="flex-fill d-flex justify-content-center align-items-center p-3 p-md-4">
-      <img src="Uploads/Character.gif" class="img-fluid character-img" alt="Pixel character">
+  <div class="d-flex flex-column flex-md-row align-items-stretch">
+    <div class="flex-fill d-flex justify-content-center align-items-center p-6 p-md-5">
+      <img src="Uploads/Character.gif" class="img-fluid character-img">
     </div>
 
-    <div class="flex-fill d-flex flex-column justify-content-center p-3 p-md-4 text-center text-lg-start">
+    <div class="flex-fill d-flex-row align-items-center p-3 p-md-5 text-black text-center text-md-start">
 
       <h1 class="pixel-title text-white">Hi, I'm<br><span>SAM RENLY</span></h1>
 
@@ -60,6 +58,7 @@
         with creative storytelling and unique mechanics. The charm and atmosphere of pixel art often inspire me, and it
         motivates me to create my own artwork.
       </div>
+      </p>
     </div>
   </div>
 
@@ -80,7 +79,7 @@
   <div class="d-flex flex-column flex-sm-row flex-lg-column 
               gap-3 align-items-center align-items-lg-start">
 
-    <!-- Education -->
+    <!-- Educatin -->
     <div class="d-flex align-items-center gap-3">
       <img src="Uploads/edu.png" class="img-fluid" style="width:60px;" alt="">
         <h5 class="title mb-1">BSIT</h5>
@@ -102,7 +101,7 @@
   </div>
 
   <!-- TEXT SECTION -->
-  <div class="flex-grow-1 text-center text-lg-start">
+  <div class="flex-grow-1 text-center text-lg-start ms-6">
 
     <h2 class="pixel-title mb-3">About Me</h2>
 
@@ -127,6 +126,20 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    document.getElementById("aboutBtn").addEventListener("click", () => {
+      window.location.href = "about.html";
+    });
+
+    document.getElementById("galleryBtn").addEventListener("click", () => {
+      window.location.href = "gallery.html";
+    });
+
+    document.getElementById("contactBtn").addEventListener("click", () => {
+      window.location.href = "contact.html";
+    });
+  </script>
 
 </body>
 
