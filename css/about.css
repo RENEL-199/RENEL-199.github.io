@@ -74,10 +74,22 @@ body {
 }
 
 .title {
-  font-size: 16px;
+  font-size: 14px;
   color: white;
   text-shadow: 3px 3px black;
+  white-space: nowrap;
   animation: fadeIn 1.5s ease-in-out;
+}
+
+.icon-img {
+  width: 52px;
+  height: auto;
+  image-rendering: pixelated;
+}
+
+.aboutme .flex-grow-1 p {
+  font-size: clamp(10px, 1.4vw, 12px);
+  line-height: 2;
 }
 
 .character-img {
