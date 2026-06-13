@@ -24,7 +24,6 @@ body {
 
 img { image-rendering: pixelated; }
 
-/* ---- NAVBAR ---- */
 .site-nav {
   background: #0a0c16;
   border-bottom: 2px solid var(--line);
@@ -49,7 +48,7 @@ img { image-rendering: pixelated; }
 }
 .nav-sep { color: var(--accent-2); align-self: center; font-size: 9px; }
 
-/* ---- Dropdown (Floors) ---- */
+
 .site-nav .dropdown-menu {
   background: var(--panel);
   border: 2px solid var(--line);
@@ -72,7 +71,7 @@ img { image-rendering: pixelated; }
   color: var(--accent-2);
 }
 
-/* ---- SCROLL CONTAINER ---- */
+
 .world-wrapper {
   width: 100%;
   overflow-x: auto;
@@ -80,7 +79,7 @@ img { image-rendering: pixelated; }
   scroll-behavior: smooth;
 }
 
-/* ---- WORLD (HORIZONTAL MAP) ---- */
+
 .world > * {
   flex: 0 0 auto;
 }
@@ -93,7 +92,6 @@ img { image-rendering: pixelated; }
   position: relative;
 }
 
-/* ---- INTERACTIVE ITEMS ---- */
 .world-item {
   transition: transform 0.2s ease, filter 0.2s ease;
   filter: drop-shadow(0 10px 10px rgba(0,0,0,0.4));
@@ -103,14 +101,14 @@ img { image-rendering: pixelated; }
   filter: drop-shadow(0 18px 18px rgba(0,0,0,0.6));
 }
 
-/* ---- IMAGES ---- */
+
 .banner-img {
   max-width: 300px;
   height: auto;
   image-rendering: pixelated;
 }
 
-/* ---- FLOOR PANEL ---- */
+
 .floor-panel {
   background: rgba(20,24,38,.75);
   padding: 16px;
@@ -142,7 +140,7 @@ img { image-rendering: pixelated; }
   box-shadow: 0 0 12px rgba(255,184,77,.25);
 }
 
-/* ---- MODAL ---- */
+
 .modal-content {
   background: var(--panel) !important;
   border: 2px solid var(--line) !important;
@@ -211,14 +209,14 @@ img { image-rendering: pixelated; }
   transform: scale(1.02);
 }
 
-/* ---- FLOOR MODAL ---- */
+
 #floorModal .modal-content {
   background: transparent !important;
   border: none !important;
   box-shadow: none;
 }
 
-/* ---- FLOOR TRANSITION ---- */
+
 .floor-transition {
   position: fixed;
   inset: 0;
@@ -234,7 +232,7 @@ img { image-rendering: pixelated; }
   transform: translateY(-100%);
 }
 
-/* ---- MOBILE ---- */
+
 @media (max-width: 576px) {
   .world {
     background-size: auto 100%;

@@ -23,7 +23,7 @@ body {
 
 img { image-rendering: pixelated; }
 
-/* ---- Generic pixel panel with corner brackets ---- */
+
 .section {
   position: relative;
   margin: 14px;
@@ -44,7 +44,7 @@ img { image-rendering: pixelated; }
 .section::before { top: 6px; left: 6px; border-right: 0; border-bottom: 0; }
 .section::after { bottom: 6px; right: 6px; border-left: 0; border-top: 0; }
 
-/* ---- NAVBAR ---- */
+
 .site-nav {
   background: #0a0c16;
   border-bottom: 2px solid var(--line);
@@ -68,7 +68,7 @@ img { image-rendering: pixelated; }
 }
 .nav-sep { color: var(--accent-2); align-self: center; font-size: 9px; }
 
-/* ---- Pixel Buttons ---- */
+
 .pixel-btn {
   display: inline-flex;
   align-items: center;
@@ -86,7 +86,6 @@ img { image-rendering: pixelated; }
 .pixel-btn:hover { background: #ffd479; transform: translate(-2px,-2px); box-shadow: 6px 6px 0 #00000080; color:#1a1206; }
 .pixel-btn:active { transform: translate(2px,2px); box-shadow: 1px 1px 0 #00000080; }
 
-/* ---- HERO ---- */
 .hero {
   background:
     linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
@@ -117,7 +116,7 @@ img { image-rendering: pixelated; }
   color: var(--muted);
 }
 
-/* ---- MENU BUTTONS ---- */
+
 .menu-btn {
   display: block;
   border: none;
@@ -142,7 +141,6 @@ img { image-rendering: pixelated; }
   transform: scale(0.95);
 }
 
-/* ---- ANIMATION ---- */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -153,7 +151,6 @@ img { image-rendering: pixelated; }
   animation: fadeIn 1.5s ease-in-out;
 }
 
-/* ---- RESPONSIVE ---- */
 @media (max-width: 991.98px) {
   .section { padding: 20px; }
 }

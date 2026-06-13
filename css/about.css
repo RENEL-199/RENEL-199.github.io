@@ -66,7 +66,7 @@ p { line-height: 1.9; }
   color: var(--muted);
 }
 
-/* ---- NAVBAR ---- */
+
 .site-nav {
   background: #0a0c16;
   border-bottom: 2px solid var(--line);
@@ -90,7 +90,7 @@ p { line-height: 1.9; }
 }
 .nav-sep { color: var(--accent-2); align-self: center; font-size: 9px; }
 
-/* ---- Buttons ---- */
+
 .pixel-btn {
   display: inline-flex;
   align-items: center;
@@ -108,7 +108,7 @@ p { line-height: 1.9; }
 .pixel-btn:hover { background: #ffd479; transform: translate(-2px,-2px); box-shadow: 6px 6px 0 #00000080; color:#1a1206; }
 .pixel-btn:active { transform: translate(2px,2px); box-shadow: 1px 1px 0 #00000080; }
 
-/* ---- HERO ---- */
+
 .hero {
   background:
     linear-gradient(180deg, rgba(13,15,28,.2), rgba(13,15,28,.6)),
@@ -139,7 +139,6 @@ p { line-height: 1.9; }
 }
 .social-rail a:hover { color:#ffd479; transform: scale(1.2); }
 
-/* ---- ABOUT ME ---- */
 .about {
   background:
     linear-gradient(rgba(8,12,30,.55), rgba(8,12,30,.7)),
@@ -160,7 +159,6 @@ p { line-height: 1.9; }
   color: #eef0ff;
 }
 
-/* ---- STATS (below About Me) ---- */
 .stat {
   display: flex;
   align-items: center;
@@ -181,7 +179,6 @@ p { line-height: 1.9; }
 .stat .s-title { font-size: 15px; color: var(--accent-2); }
 .stat .s-sub { font-size: 11px; color: var(--muted); margin-top:6px; }
 
-/* ---- MY STYLE ---- */
 .style { background: linear-gradient(120deg,#2a1530,#1a1226); border-color:#5a3a66; }
 .style-grid img {
   width: 100%;
@@ -192,7 +189,6 @@ p { line-height: 1.9; }
 }
 .style-grid img:hover { transform: translateY(-4px); box-shadow: 0 10px 18px rgba(0,0,0,.5); }
 
-/* ---- GALLERY ---- */
 .gallery { background: var(--panel-2); }
 .gallery-grid .g-item {
   width: 100%;
@@ -203,7 +199,7 @@ p { line-height: 1.9; }
 }
 .gallery-grid .g-item:hover { transform: scale(1.04); box-shadow: 0 10px 18px rgba(0,0,0,.55); z-index:2; position:relative; }
 
-/* ---- ANIMATIONS ---- */
+
 .anim { background: linear-gradient(120deg,#11251a,#0f1c16); border-color:#3f6b4a; }
 .anim .heading { color:#cfe8d6; }
 .anim-frame {
@@ -224,7 +220,7 @@ p { line-height: 1.9; }
   border:8px solid transparent; border-right-color:#e9ebf7;
 }
 
-/* ---- CONTACT ---- */
+
 .contact { background: var(--panel-2); }
 .contact img {
   width: 80%;
@@ -235,7 +231,7 @@ p { line-height: 1.9; }
 .cinfo .c-title { font-size:11px; color: var(--accent-2); }
 .cinfo .c-sub { font-size:10px; color: var(--muted); margin-top:6px; word-break:break-word; }
 
-/* ---- FOOTER ---- */
+
 .site-footer {
   text-align:center;
   padding: 26px 14px;
@@ -245,7 +241,7 @@ p { line-height: 1.9; }
 }
 .site-footer .heart { color:#ff6b6b; }
 
-/* ---- RESPONSIVE ---- */
+
 @media (max-width: 991.98px) {
   .section { padding: 20px; }
   .hero-art { min-height: 260px; margin-top: 18px; }
